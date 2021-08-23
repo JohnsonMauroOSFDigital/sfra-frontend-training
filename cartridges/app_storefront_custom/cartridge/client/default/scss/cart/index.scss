@@ -5,3 +5,13 @@
 .open-coupon-code:focus ~ .coupon-code-container {
     display: block;
 }
+
+.open-coupon-code:focus {
+    animation: cssAnimation 0s 0.1s forwards;
+}
+
+@keyframes cssAnimation {
+    to {
+        opacity: 0;
+    }
+}
