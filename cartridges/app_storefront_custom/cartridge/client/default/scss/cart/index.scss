@@ -1,0 +1,7 @@
+.coupon-code-container {
+    display: none;
+}
+
+.open-coupon-code:focus ~ .coupon-code-container {
+    display: block;
+}
