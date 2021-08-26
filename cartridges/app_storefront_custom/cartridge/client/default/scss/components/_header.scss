@@ -1,0 +1,14 @@
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.solid-background {
+    background: $white;
+}
+
+.sticky + div {
+    padding-top: 153px;
+}
