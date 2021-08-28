@@ -1,0 +1,67 @@
+<form
+    action="${URLUtils.url('PaymentInstruments-SavePayment', 'UUID', pdict.UUID)}"
+    class="payment-form"
+    method="POST"
+    name="payment-form" ${pdict.paymentForm.attributes}>
+
+
+    <!-- Card Number -->
+    <div class="form-group
+        <isif condition="${pdict.paymentForm.cardNumber.mandatory === true}">required</isif>">
+        <label class="form-control-label" for="cardNumber">
+            <isprint value="${pdict.paymentForm.cardNumber.label}" encoding="htmlcontent" />
+        </label>
+        <div class="card-number-wrapper">
+            <input type="text" class="form-control" id="cardNumber"
+                <isprint value="${pdict.paymentForm.cardNumber.attributes}" encoding="off" />
+                autocomplete="cc-number">
+            <div class="invalid-feedback">
+                <isprint value="${pdict.paymentForm.cardNumber.error}" encoding="htmlcontent" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Month -->
+    <div class="row">
+        <div class="col-6">
+            <div class="form-group
+                <isif condition="${pdict.paymentForm.expirationMonth.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="month">
+                    <isprint value="${pdict.paymentForm.expirationMonth.label}" encoding="htmlcontent" />
+                </label>
+                <select class="form-control custom-select" id="month" <isprint value="${pdict.paymentForm.expirationMonth.attributes}" encoding="off" /> autocomplete="cc-exp-month">
+                    <isloop items=${pdict.paymentForm.expirationMonth.options} var="month">
+                        <option id="${month.id}" value="${month.htmlValue}" <isif condition="${month.selected}">selected</isif> >${month.label}</option>
+                    </isloop>
+                </select>
+                <div class="invalid-feedback">
+                    <isprint value="${pdict.paymentForm.expirationMonth.error}" encoding="htmlcontent" />
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="form-group
+                <isif condition="${pdict.paymentForm.expirationYear.mandatory === true}">required</isif>">
+                <label class="form-control-label" for="year">
+                    ${Resource.msg('button.save','account',null)}
+                </label>
+                <select class="form-control custom-select" id="year" <isprint value="${pdict.paymentForm.expirationYear.attributes}" encoding="off" /> autocomplete="cc-exp-year">
+                    <option value="${pdict.paymentForm.expirationYear.options[0].htmlValue}">${pdict.paymentForm.expirationYear.options[0].label}</option>
+                    <isloop items=${pdict.expirationYears} var="year">
+                        <option id="${year}" value="${year}" <isif condition="${year == pdict.paymentForm.expirationYear.value}">selected</isif> >${year}</option>
+                    </isloop>
+                </select>
+                <div class="invalid-feedback"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--  Save Buttons -->
+    <div class="row">
+        <div class="col">
+            <button type="submit" name="save" class="btn btn-save btn-block btn-primary">${Resource.msg('button.save','account',null)}</button>
+        </div>
+    </div>
+
+</form>

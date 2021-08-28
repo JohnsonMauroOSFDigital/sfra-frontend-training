@@ -1,0 +1,22 @@
+<isdecorate template="common/layout/page">
+
+    <div class="breadcrumb-title">
+        <h1>
+            ${Resource.msg('title.shipping','address',null)}
+        </h1>
+    </div>
+
+    <div class="container">
+        <isinclude template="form/components/addressForm" />
+    </div>
+
+    <div class="breadcrumb-title">
+        <h1>
+            ${Resource.msg('title.payment','address',null)}
+        </h1>
+    </div>
+
+    <div class="container m-b-2">
+        <isinclude template="form/components/paymentForm" />
+    </div>
+</isdecorate>
