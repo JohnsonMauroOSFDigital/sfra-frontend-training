@@ -1,0 +1,78 @@
+<isdecorate template="common/layout/page">
+    <isscript>
+        var assets = require('*/cartridge/scripts/assets.js');
+        assets.addJs('https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js');
+    </isscript>
+
+    <div class="home-main">
+
+        <section class="regular slider">
+            <div>
+            <img alt="One Piece Image" src="https://observatoriodeseries.uol.com.br/wp-content/uploads/2021/05/One-Piece-Arco-Wano-Poster-Topo-com-o-visual-do-anime.png" />
+            </div>
+            <div>
+            <img alt="One Piece Image" src="https://i2.wp.com/pupilasembrasas.com.br/wp-content/uploads/2016/07/One-Piece.png?resize=1132%2C509&ssl=1" />
+            </div>
+            <div>
+            <img alt="One Piece Image" src="https://criticalhits.com.br/wp-content/uploads/2021/08/one-piece-anime-opening-update-new-straw-hats-jimbei-1274612-1280x0-1.jpeg" />
+            </div>
+            <div>
+            <img alt="One Piece Image" src="https://observatoriodeseries.uol.com.br/wp-content/uploads/2021/05/One-Piece-Arco-Wano-Poster-Topo-com-o-visual-do-anime.png" />
+            </div>
+            <div>
+            <img alt="One Piece Image" src="https://i2.wp.com/pupilasembrasas.com.br/wp-content/uploads/2016/07/One-Piece.png?resize=1132%2C509&ssl=1" />
+            </div>
+            <div>
+            <img alt="One Piece Image" src="https://criticalhits.com.br/wp-content/uploads/2021/08/one-piece-anime-opening-update-new-straw-hats-jimbei-1274612-1280x0-1.jpeg" />
+            </div>
+        </section>
+
+        <section class="regular-sync slider">
+            <div>
+            <img alt="One Piece Image" src="https://observatoriodeseries.uol.com.br/wp-content/uploads/2021/05/One-Piece-Arco-Wano-Poster-Topo-com-o-visual-do-anime.png" />
+            </div>
+            <div>
+            <img alt="One Piece Image" src="https://i2.wp.com/pupilasembrasas.com.br/wp-content/uploads/2016/07/One-Piece.png?resize=1132%2C509&ssl=1" />
+            </div>
+            <div>
+            <img alt="One Piece Image" src="https://criticalhits.com.br/wp-content/uploads/2021/08/one-piece-anime-opening-update-new-straw-hats-jimbei-1274612-1280x0-1.jpeg" />
+            </div>
+            <div>
+            <img alt="One Piece Image" src="https://observatoriodeseries.uol.com.br/wp-content/uploads/2021/05/One-Piece-Arco-Wano-Poster-Topo-com-o-visual-do-anime.png" />
+            </div>
+            <div>
+            <img alt="One Piece Image" src="https://i2.wp.com/pupilasembrasas.com.br/wp-content/uploads/2016/07/One-Piece.png?resize=1132%2C509&ssl=1" />
+            </div>
+            <div>
+            <img alt="One Piece Image" src="https://criticalhits.com.br/wp-content/uploads/2021/08/one-piece-anime-opening-update-new-straw-hats-jimbei-1274612-1280x0-1.jpeg" />
+            </div>
+        </section>
+
+        <iscomment> <div class="slider-for">
+            <div class="slick-container">
+                <img class="slick-img" alt="One Piece Image" src="https://observatoriodeseries.uol.com.br/wp-content/uploads/2021/05/One-Piece-Arco-Wano-Poster-Topo-com-o-visual-do-anime.png" />
+            </div>
+            <div class="slick-container">
+                <img class="slick-img" alt="One Piece Image" src="https://i2.wp.com/pupilasembrasas.com.br/wp-content/uploads/2016/07/One-Piece.png?resize=1132%2C509&ssl=1" />
+            </div>
+            <div class="slick-container">
+                <img class="slick-img" alt="One Piece Image" src="https://criticalhits.com.br/wp-content/uploads/2021/08/one-piece-anime-opening-update-new-straw-hats-jimbei-1274612-1280x0-1.jpeg" />
+            </div>
+        </div>
+
+
+        <div class="slider-nav">
+            <div class="slick-container">
+                <img class="slick-img" alt="One Piece Image" src="https://observatoriodeseries.uol.com.br/wp-content/uploads/2021/05/One-Piece-Arco-Wano-Poster-Topo-com-o-visual-do-anime.png" />
+            </div>
+            <div class="slick-container">
+                <img class="slick-img" alt="One Piece Image" src="https://i2.wp.com/pupilasembrasas.com.br/wp-content/uploads/2016/07/One-Piece.png?resize=1132%2C509&ssl=1" />
+            </div>
+            <div class="slick-container">
+                <img class="slick-img" alt="One Piece Image" src="https://criticalhits.com.br/wp-content/uploads/2021/08/one-piece-anime-opening-update-new-straw-hats-jimbei-1274612-1280x0-1.jpeg" />
+            </div>
+        </div> </iscomment>
+
+    </div>
+
+</isdecorate>
