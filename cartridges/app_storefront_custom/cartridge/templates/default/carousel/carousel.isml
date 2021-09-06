@@ -6,6 +6,10 @@
 
     <div class="home-main">
 
+        <isloop items="${pdict.images}" var="images">
+            <p>${images.url}</p>
+        </isloop>
+
         <section class="regular slider">
             <div>
             <img alt="One Piece Image" src="https://observatoriodeseries.uol.com.br/wp-content/uploads/2021/05/One-Piece-Arco-Wano-Poster-Topo-com-o-visual-do-anime.png" />
